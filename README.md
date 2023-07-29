@@ -4,7 +4,7 @@
 
 # Demo Preview
 
-<img src="https://firebasestorage.googleapis.com/v0/b/antoine-gonthier.appspot.com/o/preview.png?alt=media&token=2767bc05-941b-4695-9a45-c41e63a0d29c"></img>
+<img src="https://firebasestorage.googleapis.com/v0/b/antoine-gonthier.appspot.com/o/preview-min.png?alt=media&token=5ae93155-b05d-411f-a72f-372aee3d49f8"></img>
 
 The `iphone` package allow you to display an iphone really easily for your website UI and showcase your application, wallpaper really easy!
 
