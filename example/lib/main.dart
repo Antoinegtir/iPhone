@@ -44,11 +44,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  double rate = 1;
-  bool blog = false;
-  bool contact = false;
-  bool about = false;
-  int current = 0;
 
   @override
   void initState() {
