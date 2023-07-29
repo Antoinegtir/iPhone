@@ -1,0 +1,33 @@
+name: example
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  animate_do: ^3.0.2
+  awesome_icons: ^1.1.0
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.1.12
+  url_strategy: ^0.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  iphone:
+    path: ../
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/icons/
+
