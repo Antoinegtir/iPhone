@@ -1,5 +1,5 @@
 # iPhone
-<a href="http://antoine-gonthier.web.app"><img src="https://firebasestorage.googleapis.com/v0/b/antoine-gonthier.appspot.com/o/iphone.png?alt=media&token=f759a5b7-af31-41fc-9ea9-89f933d600c6"></img></a>
+<a href="http://antoine-gonthier.web.app"><img src="https://firebasestorage.googleapis.com/v0/b/antoine-gonthier.appspot.com/o/iphone-min.png?alt=media&token=f94ca61f-e34e-4359-a4fd-9591d18b86ed"></img></a>
 
 The `iphone` package allow you to display an iphone really easily for your website UI and showcase your application, wallpaper really easy!
 
