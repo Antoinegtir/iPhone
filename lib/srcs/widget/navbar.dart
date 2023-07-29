@@ -85,7 +85,8 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                     final String appName = app["name"];
                                     final String appiconAssets =
                                         app["iconAssets"];
-                                    final Function()? appRoute = app["onPressed"];
+                                    final Function()? appRoute =
+                                        app["onPressed"];
                                     return Padding(
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 10),
