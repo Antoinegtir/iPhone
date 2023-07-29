@@ -18,39 +18,101 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="Antoine Gonthier" content="My portfolio that showcase my project">
 
-  <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="example">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta name="apple-mobile-web-app-title" content="Antoine Gonthier">
+  <link rel="apple-touch-icon" href="../assets/pp.jpeg">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <meta name="title" content="Antoine Gonthier">
+  <meta name="description" content="Flutter student, Founder, and open source enthousiast">
 
-  <title>example</title>
+  <meta http-equiv = "content-language" content = "en">
+  <meta name="keywords" content="Antoine, Gonthier, Antoine Gonthier, Kams, Flutter, Epitech">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Antonine Gonthier">
+  <meta property="og:description" content="Flutter student, Founder, and open source enthousiast">
+  <meta property="og:image" content="../assets/pp.jpeg">
+
+  <link rel="icon" type="image/png" href="../assets/pp.jpeg"/>
+
+  <title>Antoine Gonthier</title>
   <link rel="manifest" href="manifest.json">
-
+  <script type="application/javascript">
+      function openLink(url, target, isAsync=false) {
+        var is_safari = /^(?!.*chrome).*safari/i.test(navigator.userAgent.toLowerCase());
+        if (is_safari && isAsync) {
+          window.location.href = url;
+        } else {
+          window.open(url, target);
+        }
+      }
+    </script>
   <script>
-    // The value below is injected by flutter build, do not touch.
     var serviceWorkerVersion = null;
   </script>
-  <!-- This script adds the flutter initialization JS code -->
+  <script src="https://unpkg.com/canvaskit-wasm@0.37.1/bin/canvaskit.js"></script>
+  <link rel="preload" href="https://unpkg.com/canvaskit-wasm@0.37.1/bin/canvaskit.wasm" as="fetch" crossOrigin="anonymous">
   <script src="flutter.js" defer></script>
+  <style>
+    html{
+      background:#000000;
+    }
+    body{
+      display:flex;
+      align-items:center;
+      justify-content: center;
+    }
+    #icon{
+    margin: auto; display: block;
+    }
+    .loading{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+    }
+    .loading-label{
+      font-size: 18px;
+      font-weight: normal;
+      text-align: center;
+      font-style: normal;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+    }
+
+    @keyframes changing{
+
+    }
+  </style>
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 </head>
 <body>
+<div class="loading" id="loader">
+  <lord-icon id="icon"
+          src="https://cdn.lordicon.com/zeabctil.json"
+          trigger="loop"
+          colors="primary:#000000,secondary:#48b0ff,tertiary:#f24c00"
+          style="width:200px;height:200px">
+  </lord-icon>
+</div>
   <script>
     window.addEventListener('load', function(ev) {
-      // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+              const loader = document.getElementById("loader");
+              loader.remove();
+              appRunner.runApp();
+          });
         }
-      }).then(function(engineInitializer) {
-        return engineInitializer.initializeEngine();
-      }).then(function(appRunner) {
-        return appRunner.runApp();
       });
     });
   </script>
